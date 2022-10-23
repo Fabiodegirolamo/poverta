@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calcolo stipendio De Girolamo-Tamuluinaite</title>
+</head>
+<body>
+    <form action='<?php echo $_SERVER["PHP_SELF"];?>' method="post"> 
+            <div class="sfondo">
+            <div class="rettangolo">
+    </div>
+        <span class="titolo">Quanto sarai povero?</span>
+            <div class="v1_18">
+            <div class="name">
+    </div>
+        <span class="obbligatorio">Campo obbligatorio</span>
+        <span class="giorni">Giorni</span>
+        <span class="v1_12"><input type="number" name="giorni" value="Quanti giorni durerà il lavoro"></span>
+    </div>
+            <div class="v1_19"><div class="name">
+    </div>
+        <span class="v1_21">Campo obbligatorio</span>
+        <span class="v1_22">Ore giornaliere di lavoro</span>
+        <span class="v1_23"><input type="number" name="ore" value="Quanto lavori al giorno?"></span>
+    </div>
+            <div class="v1_24"><div class="name">
+    </div>
+        <span class="v1_26">Campo obbligatorio</span>
+        <span class="v1_27">Compenso orario</span>
+        <span class="v1_28"><input type="number" name="compenso" value="Quanto verrai pagato all'ora?"></span>
+    </div>
+            <div class="v1_29">
+            </div>
+            <input type="submit" name="submit"value="CALCOLA" class="v1_29">
+        <span class="v1_32">
+        </span>
+    </div>
+    </form>
+
+</body>
+</html> 
+    
+<br/><br/> 
