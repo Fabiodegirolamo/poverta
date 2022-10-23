@@ -1,0 +1,15 @@
+<?php
+      if(isset($_POST["submit"]))
+      {
+        $ore=(float)$_POST["ore"];
+        $giorni=(float)$_POST["giorni"];
+        $compenso=(float)$_POST["compenso"];
+        $totale=0;
+        $totale=$compenso*$giorni*$ore;
+        
+        echo "guadagnerai $totale euro per $giorni giorni per $ore ore al giorno";
+      }
+
+
+
+      ?>
