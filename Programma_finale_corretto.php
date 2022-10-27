@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calcolo stipendio De Girolamo-Tamuluinaite</title>
+</head>
+<body>
+    <form action='<?php echo $_SERVER["PHP_SELF"];?>' method="post"> 
+            <div class="sfondo">
+            <div class="rettangolo">
+    </div>
+        <span class="titolo">Quanto sarai povero?</span>
+            <div class="v1_18">
+            <div class="name">
+    </div>
+        <span class="obbligatorio">Campo obbligatorio</span>
+        <span class="giorni">Giorni</span>
+        <span class="v1_12"><input type="number" name="giorni" value="Quanti giorni durerà il lavoro"></span>
+    </div>
+            <div class="v1_19"><div class="name">
+    </div>
+        <span class="v1_21">Campo obbligatorio</span>
+        <span class="v1_22">Ore giornaliere di lavoro</span>
+        <span class="v1_23"><input type="number" name="ore" value="Quanto lavori al giorno?"></span>
+    </div>
+            <div class="v1_24"><div class="name">
+    </div>
+        <span class="v1_26">Campo obbligatorio</span>
+        <span class="v1_27">Compenso orario</span>
+        <span class="v1_28"><input type="number" name="compenso" value="Quanto verrai pagato all'ora?"></span>
+    </div>
+            <div class="v1_29">
+            </div>
+            <input type="submit" name="submit"value="CALCOLA" class="v1_29">
+        <span class="v1_32">      <?php
+      if(isset($_POST["submit"]))
+      {
+        $ore=(float)$_POST["ore"];
+        $giorni=(float)$_POST["giorni"];
+        $compenso=(float)$_POST["compenso"];
+        $totale=0;
+        $totale=$compenso*$giorni*$ore;
+        if($ore<0 || $giorni<0 || $compenso<0)
+        {
+           echo"Valori errati, riprovare";
+        }
+        else
+        {
+
+        
+
+        
+        echo "guadagnerai $totale euro per $giorni giorni per $ore ore al giorno";
+        }
+      }
+
+
+
+      ?></span>
+    </div>
+    </form>
+
+</body>
+</html> 
+    
+<br/><br/> 
+    <style>* {
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 14px;
+    }
+      .sfondo {
+        width: 100%;
+        height: 900px;
+        background: linear-gradient(rgba(208,207,255,1), rgba(158,202,243,1));
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+      }
+      .rettangolo {
+        width: 558px;
+        height: 560px;
+        background: rgba(255,255,255,1);
+        opacity: 1;
+        position: absolute;
+        top: 170px;
+        left: 441px;
+        overflow: hidden;
+      }
+      .titolo {
+        width: 355px;
+        color: rgba(0,0,0,1);
+        position: absolute;
+        top: 196px;
+        left: 543px;
+        font-family: Roboto Condensed;
+        font-weight: Bold;
+        font-size: 42px;
+        opacity: 1;
+        text-align: center;
+      }
+      .v1_18 {
+        width: 364px;
+        height: 78px;
+        background: url("../images/v1_18.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 299px;
+        left: 538px;
+        overflow: hidden;
+      }
+      .name {
+        color: #fff;
+      }
+      .obbligatorio {
+        width: 137px;
+        color: rgba(255,0,0,1);
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        font-family: Raleway;
+        font-weight: Regular;
+        font-size: 11px;
+        opacity: 1;
+        text-align: left;
+      }
+      .giorni {
+        width: 51px;
+        color: rgba(0,0,0,1);
+        position: relative;
+        top: 0px;
+        left: 0px;
+        font-family: Raleway;
+        font-weight: Black;
+        font-size: 14px;
+        opacity: 1;
+        text-align: left;
+      }
+      .v1_12 {
+        width: 256px;
+        color: rgba(163,163,163,1);
+        position: absolute;
+        top: 36px;
+        left: 9px;
+        font-family: Raleway;
+        font-weight: Regular;
+        font-size: 14px;
+        opacity: 1;
+        text-align: left;
+      }
+      .v1_19 {
+        width: 364px;
+        height: 78px;
+        background: url("../images/v1_19.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 392px;
+        left: 538px;
+        overflow: hidden;
+      }
+      .name {
+        color: #fff;
+      }
+      .v1_21 {
+        width: 137px;
+        color: rgba(255,0,0,1);
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        font-family: Raleway;
+        font-weight: Regular;
+        font-size: 11px;
+        opacity: 1;
+        text-align: left;
+      }
+      .v1_22 {
+        width: 211px;
+        color: rgba(0,0,0,1);
+        position: relative;
+        top: 0px;
+        left: 0px;
+        font-family: Raleway;
+        font-weight: Regular;
+        font-size: 14px;
+        opacity: 1;
+        text-align: left;
+      }
+      .v1_23 {
+        width: 207px;
+        color: rgba(163,163,163,1);
+        position: absolute;
+        top: 36px;
+        left: 9px;
+        font-family: Raleway;
+        font-weight: Regular;
+        font-size: 14px;
+        opacity: 1;
+        text-align: left;
+      }
+      .v1_24 {
+        width: 364px;
+        height: 78px;
+        background: url("../images/v1_24.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 485px;
+        left: 538px;
+        overflow: hidden;
+      }
+      .name {
+        color: #fff;
+      }
+      .v1_26 {
+        width: 137px;
+        color: rgba(255,0,0,1);
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        font-family: Raleway;
+        font-weight: Regular;
+        font-size: 11px;
+        opacity: 1;
+        text-align: left;
+      }
+      .v1_27 {
+        width: 152px;
+        color: rgba(0,0,0,1);
+        position: relative;
+        top: 0px;
+        left: 0px;
+        font-family: Raleway;
+        font-weight: Regular;
+        font-size: 14px;
+        opacity: 1;
+        text-align: left;
+      }
+      .v1_28 {
+        width: 249px;
+        color: rgba(163,163,163,1);
+        position: absolute;
+        top: 36px;
+        left: 9px;
+        font-family: Raleway;
+        font-weight: Regular;
+        font-size: 14px;
+        opacity: 1;
+        text-align: left;
+      }
+      .v1_29 {
+        width: 364px;
+        height: 35px;
+        background: rgba(208,207,255,1);
+        border: none;
+        opacity: 1;
+        position: absolute;
+        top: 597px;
+        left: 538px;
+        overflow: hidden;
+      }
+      .v1_31 {
+        width: 65px;
+        color: rgba(7,7,7,1);
+        position: absolute;
+        top: 607px;
+        left: 688px;
+        font-family: Raleway;
+        font-weight: Bold;
+        font-size: 14px;
+        opacity: 1;
+        text-align: left;
+      }
+      .v1_32 {
+        width: 364px;
+        color: rgba(0,0,0,1);
+        position: absolute;
+        top: 667px;
+        left: 538px;
+        font-size: 14px;
+        opacity: 1;
+        text-align: left;
+      }
+      </style>
